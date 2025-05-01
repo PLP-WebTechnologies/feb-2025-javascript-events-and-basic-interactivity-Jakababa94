@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sweet Delights - Pastry Shop</title> 
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" 
+  integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <header>
+    <h1>Sweet Delights</h1>
+    <p>Fresh Pastries Delivered Daily-For Your Sweet Mouth!</p>
+    <nav>
+      <ul>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#subscribe">Subscribe</a></li>
+        <li><a href="#secret">Secret</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Welcome to Sweet Delights</h1>
+      <p>Indulge in the finest pastries crafted with love and care.</p>
+      <button class="btn">Order Now</button>
+    </div>
+  </section>
+
+  <section class="gallery">
+    <h2>Our Pastries</h2>
+    <input type="text" id="search-bar" placeholder="Search pastries...">
+    <div class="gallery-image">
+      <div class="gallery-card">
+        <h3>Croissant Cake</h3>
+        <img src="https://i.pinimg.com/736x/27/17/89/2717891f951a1a20c0095464ff53a3ed.jpg" alt="Croissant">
+        <p class="price">$5.99</p>
+        <button class="btn add-to-cart">Add to Cart</button>
+      </div>
+      <div class="gallery-card">
+        <h3>Macaron</h3>
+        <img src="https://i.pinimg.com/736x/29/10/5c/29105c3e7427b1f851f1c8666fcd963f.jpg" alt="Macaron">
+        <p class="price">$2.99</p>
+        <button class="btn add-to-cart">Add to Cart</button>
+      </div>
+      <div class="gallery-card">
+        <h3>Cupcake</h3>
+        <img src="https://i.pinimg.com/736x/9a/36/fe/9a36fec0b2a1ea95644bf2bdc0c9bc24.jpg" alt="Cupcake">
+        <p class="price">$3.99</p>
+        <button class="btn add-to-cart">Add to Cart</button>
+      </div>    
+    </div>
+    <div class="shopping-cart">
+        <h3>Your Cart</h3>
+        <div id="cart-items">
+          <p>Your cart is empty.</p>
+        </div>
+        <p id="cart-total">Total: $0.00</p>
+        <button class="btn" id="checkout-button" disabled>Checkout</button>
+    </div>
+  </section>
+
+  <section class="tabs">
+    <h2>About Us</h2>
+    <button onclick="showTab('story')">Our Story</button>
+    <button onclick="showTab('team')">Meet the Team</button>
+    <div id="story" class="tabs-content active">
+      <p>We started with a love for baking and a dream to share joy through pastries.
+        <br>
+        We blend culinary artistry with business acumen to deliver delicious, 
+        visually appealing products that meet customer needs and preferences,
+        aiming for steady growth and strong community presence.</p>
+    </div>
+    <div id="team" class="tabs-content">
+      <p>Our chefs bring decades of experience and creativity into every bite!
+      </p>
+      <div class="team-chefs">
+        <div class="chef-card">
+          <h3>Chef Marie</h3>
+          <img src="https://i.pinimg.com/736x/04/af/58/04af589e14a7e56c867ac2541cd7163e.jpg" alt="Chef Marie">
+      </div>
+        <div class="chef-card">
+          <h3>Chef John</h3>
+          <img src="https://i.pinimg.com/736x/16/d6/7d/16d67d2ca55748e42fce84f47ea04a51.jpg" alt="Chef John">
+          <h4>Lead Chef</h4>
+          <p>Over 15 years of experince in the Pastry Industry.</p>
+    </div>
+        <div class="chef-card">
+          <h3>Chef Anna</h3>
+          <img src="https://i.pinimg.com/736x/fb/ef/ef/fbefef59a8a14cdf1f93debc3b344feb.jpg" alt="Chef Anna">
+
+  </section>
+
+  <section id="subscribe" class="subscribe-section">
+    <h2>Subscribe to Our Newsletter</h2>
+    <form id="subscribeForm">
+      <input type="email" id="email" placeholder="Enter your email" required>
+      <div class="form-feedback" id="emailFeedback"></div>
+      <input type="password" id="password" placeholder="Create a password" required>
+      <div class="form-feedback" id="passwordFeedback"></div>
+      <button class="btn" type="submit">Subscribe</button>
+    </form>
+  </section>
+
+  <section class="testimonials">
+    <h2>What Our Customers Say</h2>
+    <div class="testimonial-card">
+      <p>"The pastries are absolutely delicious! Highly recommend Sweet Delights."</p>
+      <h4>- Jane Doe</h4>
+    </div>
+    <div class="testimonial-card">
+      <p>"Amazing quality and fast delivery. My family loves it!"</p>
+      <h4>- John Smith</h4>
+    </div>
+  </section>
+
+  <section class="secret-section" id="secret">
+    <h2>Click the Button!</h2>
+    <button class="btn" id="colorButton">Click Me</button>
+    <div class="secret" id="secretMessage">🎉 You discovered the secret message!</div>
+  </section>
+
+  <div class="social-share">
+    <a href="https://facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+    <a href="https://twitter.com" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+    <a href="https://instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+  </div>
+
+  <button id="back-to-top" class="btn">↑ Back to Top</button>
+
+  <footer>
+    <div class="footer-content">
+      <p>&copy; 2025 Sweet Delights. All rights reserved.</p>
+      <ul class="social-links">
+        <li><a href="https://facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a></li>
+        <li><a href="https://twitter.com" target="_blank"><i class="fa-brands fa-twitter"></i></a></li>
+        <li><a href="https://instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+      </ul>
+      <div class="contact-info">
+        <p><strong>Contact Us:</strong></p>
+        <p>Email: <a href="mailto:info@sweetdelights.com">info@sweetdelights.com</a></p>
+        <p>Phone: <a href="tel:+254 721-805-204">+254 721805204</a></p>
+        <p>Address: 123 Pastry Lane, Nairobi City</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
